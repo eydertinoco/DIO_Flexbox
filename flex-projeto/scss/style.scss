@@ -1,0 +1,30 @@
+// sass --watch flex-projeto/scss/style.scss:flex-projeto/style.css
+
+$first: #112959;
+$second: #7bb9e8;
+$third: #ffffff;
+$fourth: #000000;
+$nocolor: none;
+
+@mixin for-phone-only {
+  @media (max-width: 640.98px) { @content; }
+}
+@mixin for-tablet-only {
+  @media (min-width: 641px) and (max-width: 1024.98px) { @content; }
+}
+@mixin for-desktop-only {
+  @media (min-width: 1025px) { @content; }
+}
+
+* {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: auto;
+  width: 100%;
+}
+
+@import 'header', 'pageOne', 'servico';

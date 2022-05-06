@@ -1,0 +1,11 @@
+.servico {
+  background: $first;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  & h2 {
+    font-size: 1.5rem;
+    color: $third;
+    padding: 30px 0;
+  }
+}

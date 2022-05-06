@@ -1,0 +1,30 @@
+header {
+  background: $first;
+  display: flex;
+  align-items: center;
+  padding: 30px;
+  & h1 {
+    color: $third;
+    font-size: 1.5rem;
+  }
+  & ul {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: right;
+    align-content: center;
+    & li {
+      margin: 0px 10px;
+      & a {
+        text-decoration: none;
+        color: $third;
+      }
+    }
+  }
+}
+
+.headerFlex {
+  display: flex;
+  width: 100%;
+}
